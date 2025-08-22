@@ -1,0 +1,24 @@
+Imaš 20 ravnopravnih farmera koji su bave zapisivanjem životinja. Svačiji glas jednako vrijedi.
+Da bi neka životinja bila zapisana, svaki je farmer mora vidjeti i zapisati što vidi.
+Također, svaki farmer kaže onom drugom što je on vidio.
+Na kraju se pobroje glasovi i finalno se zapiše ona životinja za koju je najviše farmera reklo da je vidi Analogija bi bila: farmeri -> kamere koje vrte klasifikator; životinja -> objekt detekcije; "svačiji glas jedanko vrijedi" -> p2p; "finalno se zapiše ona životinja koju je najviše farmera reklo da je vidi" -> consenzus algoritam
+
+
+Problem: ča ako je farmer slip ili ne zna brojat, ili ne zna ča je krava, ili je samo retardiran?
+To treba nekako bit riješivo
+
+Gepetto said this:
+
+Točno to što opisuješ rješava se pojmom:
+
+👉 Byzantine Fault Tolerance (BFT)
+
+👆 To je “umbrella” koncept – algoritmi koji omogućuju sustavu da dođe do ispravnog konsenzusa čak i ako dio farmera (nodova) laže, faila, ili je “retardiran”.
+
+Ako želiš i jednostavniju varijantu (bez da se odmah bacaš u PBFT i slične hardcore stvari):
+👉 Weighted voting / Reputation-based consensus
+
+
+Znan ča se iduće vadin hehe
+
+I onda to implementirat u unknown alert handling u distsysu
